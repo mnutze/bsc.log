@@ -215,6 +215,7 @@
         /**
          * @param str
          * @returns {Promise<string>}
+         * idea by https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/digest
          */
         async function hash(str) {
           const encoder = new TextEncoder();
