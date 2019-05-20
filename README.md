@@ -1,7 +1,7 @@
 # Extended logging
 a fork of ccm.log.js from André Kless https://github.com/ccmjs/akless-components
 
-To use this component as logger you've to regard following steps:
+### To use this component as logger you've to regard following steps
 
    (1) Copy & Paste following into your component config 
 ```
@@ -41,3 +41,10 @@ To use this component as logger you've to regard following steps:
    * __... will be continued__
    
    (4) If your component type isn't listened or your want to modify your log-config -> feel free to use https://mnutze.github.io/bsc.log/resources/configs.js as template
+
+---
+
+ 
+``````
+
+Der fork befindet sich unter https://mnutze.github.io/bsc.log/ccm.log.js. Um den fork für das Logging zu nutzen
