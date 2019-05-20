@@ -117,9 +117,9 @@
         if ( self.parent && check( 'parent' ) )
           results.parent = {
             // if hash library loaded -> use this for hashing parent.config, otherwise use component hash function
-            id:      my.hash && $.isObject( my.hash ) ? my.hash.md5( self.parent.config ) : hash( self.parent.config ),
+            id:      my.hash && $.isObject( my.hash ) ? my.hash.md5( self.parent.config ) : undefined,
             // for identifying context in a human readable format -> locate a possible parent description
-            descr: getParentDescription(),
+            descr:   getParentDescription(),
             name:    self.parent.component.name,
             version: self.parent.component.version
           };
@@ -140,7 +140,7 @@
             const obj = { realm: user.getRealm() };
             if ( user.isLoggedIn() ) {
               const userdata = user.data();
-              obj.user = my.hash ? ( $.isObject( my.hash ) ? my.hash.md5( userdata.user ) : md5( userdata.user ) ) : userdata.user;
+              obj.user = my.hash && my.hashUser ? ( $.isObject( my.hash ) ? my.hash.md5( userdata.user ) : md5( userdata.user ) ) : userdata.user;
             }
             results.user = obj;
           }
@@ -209,25 +209,6 @@
 
           return data;
 
-        }
-
-
-        /**
-         * @param str
-         * @returns {Promise<string>}
-         * idea by https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/digest
-         */
-        async function hash(str) {
-          const encoder = new TextEncoder();
-          const data = encoder.encode(str);
-          const digestBuffer = await window.crypto.subtle.digest('SHA-256', data);
-          const byteArray = new Uint8Array(digestBuffer);
-          const hexCodes = [...byteArray].map(value => {
-            const hexCode = value.toString(16);
-            const paddedHexCode = hexCode.padStart(2, '0');
-            return paddedHexCode;
-          });
-          return hexCodes.join('');
         }
 
         function getParentDescription() {
