@@ -116,6 +116,10 @@
         // log ccm context parent informations
         if ( self.parent && check( 'parent' ) )
           results.parent = {
+            // if hash library loaded -> use this for hashing parent.config, otherwise use component hash function
+            id:      my.hash && $.isObject( my.hash ) ? my.hash.md5( self.parent.config ) : hash( self.parent.config ),
+            // for identifying context in a human readable format -> locate a possible parent description
+            descr: getParentDescription(),
             name:    self.parent.component.name,
             version: self.parent.component.version
           };
@@ -124,10 +128,6 @@
         if ( self.parent && check( 'root' ) ) {
           const root = self.ccm.context.root( self );
           results.root = {
-            // if hash library loaded -> use this for hashing parent.config, otherwise use component hash function
-            id:      my.hash && $.isObject( my.hash ) ? my.hash.md5( self.parent.config ) : hash( self.parent.config ),
-            // for identifying context in a human readable format -> locate a possible parent description
-            descr: getParentDescription(),
             name:    root.component.name,
             version: root.component.version
           };
