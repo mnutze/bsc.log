@@ -116,7 +116,7 @@
         // log ccm context parent informations
         if ( self.parent && check( 'parent' ) )
           results.parent = {
-            // if hash library loaded -> use this for hashing parent.config, otherwise use component hash function
+            // if hash library loaded -> use this for hashing parent.config, otherwise set no id ... looking for a better idea
             id:      my.hash && $.isObject( my.hash ) ? my.hash.md5( self.parent.config ) : undefined,
             // for identifying context in a human readable format -> locate a possible parent description
             descr:   getParentDescription(),
