@@ -8,7 +8,7 @@ ccm.files[ 'configs.js' ] = {
   "global": {
     // hash module needed for pseudonymization of user
     "hash": [ "ccm.load", { "url": "https://ccmjs.github.io/akless-components/modules/md5.js", "type": "module" } ],
-    "hashUser": true,
+    "hashUser": false,
     "onfinish": {
       "store": {
         "settings": { "name": 'mnutze2s_activity_log', "url": "wss://ccm2.inf.h-brs.de" },
@@ -173,7 +173,7 @@ ccm.files[ 'configs.js' ] = {
     "global": {
       // hash module needed for pseudonymization of user
       "hash": [ "ccm.load", { "url": "https://ccmjs.github.io/akless-components/modules/md5.js", "type": "module" } ],
-      "hashUser": true,
+      "hashUser": false,
       "onfinish": {
         "store": {
           "settings": { "name": 'mnutze2s_demo_log', "url": "wss://ccm2.inf.h-brs.de" },
