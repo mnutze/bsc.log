@@ -12,13 +12,26 @@ ccm.files[ 'configs.js' ] = {
     "onfinish": {
       "store": {
         "settings": { "name": 'mnutze2s_activity_log', "url": "https://ccm2.inf.h-brs.de" },
-        "permissions": {
+        "permissions_templ": {
           "creator": "Educator",
           "realm": "guest",
           "access": {
             "get": "all",
             "set": "creator",
             "del": "creator"
+          }
+        },
+        "permissions": {
+          "creator": "308cecce8e2115c780e374f13ecb4547",
+          "realm": "hbrsinfpseudo",
+          "group": {
+            "admingroup": [ "479e5f8396cec7afccd68b097eabe5f9", "4c9d704dfcb512873c39ddeefdd559e1", "308cecce8e2115c780e374f13ecb4547" ],
+            "studigroup": [ "479e5f8396cec7afccd68b097eabe5f9", "4c9d704dfcb512873c39ddeefdd559e1", "308cecce8e2115c780e374f13ecb4547", "%user%" ]
+          },
+          "access": {
+            "get": "studigroup",
+            "set": "admingroup",
+            "del": "admingroup"
           }
         }
       }
