@@ -57,7 +57,16 @@ Um für das Monitoring-System Interaktionen aufzuzeichnen, muss mein fork von He
   "onfinish": {
     "store": {
       "settings": { "name": 'mnutze2s_activity_log', "url": "wss://ccm2.inf.h-brs.de" },
-      "permissions": { ... }
+      "permissions": {
+        "creator": ... , // should be the teacher
+        "realm": ... ,
+        // maybe time-restricted access
+        "access": {
+          "get": "all", 
+          "set": "creator",
+          "del": "creator"
+        }
+      }
     }
   }
 } ],
