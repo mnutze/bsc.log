@@ -46,6 +46,18 @@ ccm.files[ 'configs.js' ] = {
       }
     },
 
+    "digital_clock": {
+      "hash": [ "ccm.load", { "url": "https://ccmjs.github.io/akless-components/modules/md5.js", "type": "module" } ],
+      "onfinish": ["ccm.get", "https://mnutze.github.io/bsc.log/resources/configs.js", "global.onfinish"],
+      "hashUser": ["ccm.get", "https://mnutze.github.io/bsc.log/resources/configs.js", "global.hashUser"],
+      "events": {
+        "start": { "parent": true, "user": true, "data": true },
+        "clear": { "parent": true, "user": true, "data": true },
+        "set": { "parent": true, "user": true, "data": true },
+        "inc": { "parent": true, "user": true, "data": true }
+      }
+    },
+
     "fast_poll": {
       "hash": [ "ccm.load", { "url": "https://ccmjs.github.io/akless-components/modules/md5.js", "type": "module" } ],
       "onfinish": ["ccm.get", "https://mnutze.github.io/bsc.log/resources/configs.js", "global.onfinish"],
@@ -87,6 +99,24 @@ ccm.files[ 'configs.js' ] = {
       }
     },
 
+    "log_render_only": {
+      "hash": [ "ccm.load", { "url": "https://ccmjs.github.io/akless-components/modules/md5.js", "type": "module" } ],
+      "onfinish": ["ccm.get", "https://mnutze.github.io/bsc.log/resources/configs.js", "global.onfinish"],
+      "hashUser": ["ccm.get", "https://mnutze.github.io/bsc.log/resources/configs.js", "global.hashUser"],
+      "events": {
+        "render": { "parent": true, "user": true, "data": true }
+      }
+    },
+
+    "log_start_only": {
+      "hash": [ "ccm.load", { "url": "https://ccmjs.github.io/akless-components/modules/md5.js", "type": "module" } ],
+      "onfinish": ["ccm.get", "https://mnutze.github.io/bsc.log/resources/configs.js", "global.onfinish"],
+      "hashUser": ["ccm.get", "https://mnutze.github.io/bsc.log/resources/configs.js", "global.hashUser"],
+      "events": {
+        "start": { "parent": true, "user": true, "data": true }
+      }
+    },
+
     "menu": {
       "hash": [ "ccm.load", { "url": "https://ccmjs.github.io/akless-components/modules/md5.js", "type": "module" } ],
       "onfinish": ["ccm.get", "https://mnutze.github.io/bsc.log/resources/configs.js", "global.onfinish"],
@@ -124,6 +154,18 @@ ccm.files[ 'configs.js' ] = {
       "hashUser": ["ccm.get", "https://mnutze.github.io/bsc.log/resources/configs.js", "global.hashUser"],
       "events": {
         "finish": { "parent": true, "user": true, "data": true }
+      }
+    },
+
+    "regex": {
+      "hash": [ "ccm.load", { "url": "https://ccmjs.github.io/akless-components/modules/md5.js", "type": "module" } ],
+      "onfinish": ["ccm.get", "https://mnutze.github.io/bsc.log/resources/configs.js", "global.onfinish"],
+      "hashUser": ["ccm.get", "https://mnutze.github.io/bsc.log/resources/configs.js", "global.hashUser"],
+      "events": {
+        "start": { "parent": true, "user": true, "data": true },
+        "eval": { "parent": true, "user": true, "data": true },
+        "plus": { "parent": true, "user": true, "data": true },
+        "regex": { "parent": true, "user": true, "data": true }
       }
     },
 
