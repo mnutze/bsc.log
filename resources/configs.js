@@ -11,7 +11,7 @@ ccm.files[ 'configs.js' ] = {
     "hashUser": false,
     "onfinish": {
       "store": {
-        "settings": { "name": 'mnutze2s_activity_log', "url": "https://ccm2.inf.h-brs.de" },
+        "settings": { "name": 'mnutze2s_activity_log', "url": "wss://ccm2.inf.h-brs.de" },
         "permissions": {
           "creator": "Educator",
           "realm": "guest",
