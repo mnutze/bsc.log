@@ -64,6 +64,7 @@ ccm.files[ 'configs.js' ] = {
       "onfinish": ["ccm.get", "https://mnutze.github.io/bsc.log/resources/configs.js", "global.onfinish"],
       "hashUser": ["ccm.get", "https://mnutze.github.io/bsc.log/resources/configs.js", "global.hashUser"],
       "events": {
+        // event "start" starts rendering -> no user interaction -> maybe remove
         "start": { "parent": true, "user": true, "data": true },
         "clear": { "parent": true, "user": true, "data": true },
         "set": { "parent": true, "user": true, "data": true },
@@ -76,6 +77,7 @@ ccm.files[ 'configs.js' ] = {
       "onfinish": ["ccm.get", "https://mnutze.github.io/bsc.log/resources/configs.js", "global.onfinish"],
       "hashUser": ["ccm.get", "https://mnutze.github.io/bsc.log/resources/configs.js", "global.hashUser"],
       "events": {
+        // event "start" starts rendering -> no user interaction -> maybe remove
         "start": { "parent": true, "user": true, "data": true },
         "click": { "parent": true, "user": true, "data": true },
         "finish": { "parent": true, "user": true, "data": true }
@@ -144,6 +146,7 @@ ccm.files[ 'configs.js' ] = {
       "onfinish": ["ccm.get", "https://mnutze.github.io/bsc.log/resources/configs.js", "global.onfinish"],
       "hashUser": ["ccm.get", "https://mnutze.github.io/bsc.log/resources/configs.js", "global.hashUser"],
       "events": {
+        // event "start" starts rendering -> no user interaction -> maybe remove
         "start": { "parent": true, "user": true, "data": true },
         "goto": { "parent": true, "user": true, "data": true },
         "prev": { "parent": true, "user": true, "data": true },
