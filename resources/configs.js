@@ -54,8 +54,7 @@ ccm.files[ 'configs.js' ] = {
       "onfinish": ["ccm.get", "https://mnutze.github.io/bsc.log/resources/configs.js", "global.onfinish"],
       "hashUser": ["ccm.get", "https://mnutze.github.io/bsc.log/resources/configs.js", "global.hashUser"],
       "events": {
-        "create": { "parent": true, "user": true, "data": true },
-        "edit": { "parent": true, "user": true, "data": true }
+        "create": { "parent": true, "user": true, "data": true }
       }
     },
 
