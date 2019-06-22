@@ -38,6 +38,21 @@ ccm.files[ 'configs.js' ] = {
     }
   },
 
+  "greedy": {
+    "key": "greedy",
+    "hash": [ "ccm.load", { "url": "https://ccmjs.github.io/akless-components/modules/md5.js", "type": "module" } ],
+    "hashUser": false,
+    "logging": {
+      "data": true,
+      "browser": true,
+      "parent": true,
+      "root": true,
+      "user": true,
+      "website": true
+    },
+    "onfinish": { "log": true }
+  },
+
   "monitoring": { // log configuration for different component types -> has to complete
 
     "cloze": {
@@ -55,6 +70,15 @@ ccm.files[ 'configs.js' ] = {
       "hashUser": ["ccm.get", "https://mnutze.github.io/bsc.log/resources/configs.js", "global.hashUser"],
       "events": {
         "create": { "parent": true, "user": true, "data": true }
+      }
+    },
+
+    "content": {
+      "hash": [ "ccm.load", { "url": "https://ccmjs.github.io/akless-components/modules/md5.js", "type": "module" } ],
+      "onfinish": ["ccm.get", "https://mnutze.github.io/bsc.log/resources/configs.js", "global.onfinish"],
+      "hashUser": ["ccm.get", "https://mnutze.github.io/bsc.log/resources/configs.js", "global.hashUser"],
+      "events": {
+        "start": { "parent": true, "user": true }
       }
     },
 
