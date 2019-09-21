@@ -7,7 +7,7 @@ ccm.files[ 'configs.js' ] = {
 
   "global": {
     // hash module needed for pseudonymization of user
-    "hash": [ "ccm.load", { "url": "https://ccmjs.github.io/akless-components/modules/md5.js", "type": "module" } ],
+    "hash": [ "ccm.load", { "url": "https://ccmjs.github.io/akless-components/modules/md5.mjs", "type": "module" } ],
     "hashUser": false,
     "onfinish": {
       "store": {
@@ -40,7 +40,7 @@ ccm.files[ 'configs.js' ] = {
 
   "greedy": {
     "key": "greedy",
-    "hash": [ "ccm.load", { "url": "https://ccmjs.github.io/akless-components/modules/md5.js", "type": "module" } ],
+    "hash": [ "ccm.load", { "url": "https://ccmjs.github.io/akless-components/modules/md5.mjs", "type": "module" } ],
     "hashUser": false,
     "logging": {
       "data": true,
@@ -56,7 +56,7 @@ ccm.files[ 'configs.js' ] = {
   "monitoring": { // log configuration for different component types -> has to complete
 
     "cloze": {
-      "hash": [ "ccm.load", { "url": "https://ccmjs.github.io/akless-components/modules/md5.js", "type": "module" } ],
+      "hash": [ "ccm.load", { "url": "https://ccmjs.github.io/akless-components/modules/md5.mjs", "type": "module" } ],
       "onfinish": ["ccm.get", "https://mnutze.github.io/bsc.log/resources/configs.js", "global.onfinish"],
       "hashUser": ["ccm.get", "https://mnutze.github.io/bsc.log/resources/configs.js", "global.hashUser"],
       "events": {
@@ -65,7 +65,7 @@ ccm.files[ 'configs.js' ] = {
     },
 
     "comment": {
-      "hash": [ "ccm.load", { "url": "https://ccmjs.github.io/akless-components/modules/md5.js", "type": "module" } ],
+      "hash": [ "ccm.load", { "url": "https://ccmjs.github.io/akless-components/modules/md5.mjs", "type": "module" } ],
       "onfinish": ["ccm.get", "https://mnutze.github.io/bsc.log/resources/configs.js", "global.onfinish"],
       "hashUser": ["ccm.get", "https://mnutze.github.io/bsc.log/resources/configs.js", "global.hashUser"],
       "events": {
@@ -74,7 +74,7 @@ ccm.files[ 'configs.js' ] = {
     },
 
     "content": {
-      "hash": [ "ccm.load", { "url": "https://ccmjs.github.io/akless-components/modules/md5.js", "type": "module" } ],
+      "hash": [ "ccm.load", { "url": "https://ccmjs.github.io/akless-components/modules/md5.mjs", "type": "module" } ],
       "onfinish": ["ccm.get", "https://mnutze.github.io/bsc.log/resources/configs.js", "global.onfinish"],
       "hashUser": ["ccm.get", "https://mnutze.github.io/bsc.log/resources/configs.js", "global.hashUser"],
       "events": {
@@ -83,7 +83,7 @@ ccm.files[ 'configs.js' ] = {
     },
 
     "digital_clock": {
-      "hash": [ "ccm.load", { "url": "https://ccmjs.github.io/akless-components/modules/md5.js", "type": "module" } ],
+      "hash": [ "ccm.load", { "url": "https://ccmjs.github.io/akless-components/modules/md5.mjs", "type": "module" } ],
       "onfinish": ["ccm.get", "https://mnutze.github.io/bsc.log/resources/configs.js", "global.onfinish"],
       "hashUser": ["ccm.get", "https://mnutze.github.io/bsc.log/resources/configs.js", "global.hashUser"],
       "events": {
@@ -96,7 +96,7 @@ ccm.files[ 'configs.js' ] = {
     },
 
     "fast_poll": {
-      "hash": [ "ccm.load", { "url": "https://ccmjs.github.io/akless-components/modules/md5.js", "type": "module" } ],
+      "hash": [ "ccm.load", { "url": "https://ccmjs.github.io/akless-components/modules/md5.mjs", "type": "module" } ],
       "onfinish": ["ccm.get", "https://mnutze.github.io/bsc.log/resources/configs.js", "global.onfinish"],
       "hashUser": ["ccm.get", "https://mnutze.github.io/bsc.log/resources/configs.js", "global.hashUser"],
       "events": {
@@ -108,7 +108,7 @@ ccm.files[ 'configs.js' ] = {
     },
 
     "feedback": {
-      "hash": [ "ccm.load", { "url": "https://ccmjs.github.io/akless-components/modules/md5.js", "type": "module" } ],
+      "hash": [ "ccm.load", { "url": "https://ccmjs.github.io/akless-components/modules/md5.mjs", "type": "module" } ],
       "onfinish": ["ccm.get", "https://mnutze.github.io/bsc.log/resources/configs.js", "global.onfinish"],
       "hashUser": ["ccm.get", "https://mnutze.github.io/bsc.log/resources/configs.js", "global.hashUser"],
       "events": {
@@ -117,7 +117,7 @@ ccm.files[ 'configs.js' ] = {
     },
 
     "kanban_board": {
-      "hash": [ "ccm.load", { "url": "https://ccmjs.github.io/akless-components/modules/md5.js", "type": "module" } ],
+      "hash": [ "ccm.load", { "url": "https://ccmjs.github.io/akless-components/modules/md5.mjs", "type": "module" } ],
       "onfinish": ["ccm.get", "https://mnutze.github.io/bsc.log/resources/configs.js", "global.onfinish"],
       "hashUser": ["ccm.get", "https://mnutze.github.io/bsc.log/resources/configs.js", "global.hashUser"],
       "events": {
@@ -129,7 +129,7 @@ ccm.files[ 'configs.js' ] = {
     },
 
     "live_poll": {
-      "hash": [ "ccm.load", { "url": "https://ccmjs.github.io/akless-components/modules/md5.js", "type": "module" } ],
+      "hash": [ "ccm.load", { "url": "https://ccmjs.github.io/akless-components/modules/md5.mjs", "type": "module" } ],
       "onfinish": ["ccm.get", "https://mnutze.github.io/bsc.log/resources/configs.js", "global.onfinish"],
       "hashUser": ["ccm.get", "https://mnutze.github.io/bsc.log/resources/configs.js", "global.hashUser"],
       "events": {
@@ -138,7 +138,7 @@ ccm.files[ 'configs.js' ] = {
     },
 
     "log_render_only": {
-      "hash": [ "ccm.load", { "url": "https://ccmjs.github.io/akless-components/modules/md5.js", "type": "module" } ],
+      "hash": [ "ccm.load", { "url": "https://ccmjs.github.io/akless-components/modules/md5.mjs", "type": "module" } ],
       "onfinish": ["ccm.get", "https://mnutze.github.io/bsc.log/resources/configs.js", "global.onfinish"],
       "hashUser": ["ccm.get", "https://mnutze.github.io/bsc.log/resources/configs.js", "global.hashUser"],
       "events": {
@@ -147,7 +147,7 @@ ccm.files[ 'configs.js' ] = {
     },
 
     "log_start_only": {
-      "hash": [ "ccm.load", { "url": "https://ccmjs.github.io/akless-components/modules/md5.js", "type": "module" } ],
+      "hash": [ "ccm.load", { "url": "https://ccmjs.github.io/akless-components/modules/md5.mjs", "type": "module" } ],
       "onfinish": ["ccm.get", "https://mnutze.github.io/bsc.log/resources/configs.js", "global.onfinish"],
       "hashUser": ["ccm.get", "https://mnutze.github.io/bsc.log/resources/configs.js", "global.hashUser"],
       "events": {
@@ -156,7 +156,7 @@ ccm.files[ 'configs.js' ] = {
     },
 
     "menu": {
-      "hash": [ "ccm.load", { "url": "https://ccmjs.github.io/akless-components/modules/md5.js", "type": "module" } ],
+      "hash": [ "ccm.load", { "url": "https://ccmjs.github.io/akless-components/modules/md5.mjs", "type": "module" } ],
       "onfinish": ["ccm.get", "https://mnutze.github.io/bsc.log/resources/configs.js", "global.onfinish"],
       "hashUser": ["ccm.get", "https://mnutze.github.io/bsc.log/resources/configs.js", "global.hashUser"],
       "events": {
@@ -165,7 +165,7 @@ ccm.files[ 'configs.js' ] = {
     },
 
     "pdf_viewer": {
-      "hash": [ "ccm.load", { "url": "https://ccmjs.github.io/akless-components/modules/md5.js", "type": "module" } ],
+      "hash": [ "ccm.load", { "url": "https://ccmjs.github.io/akless-components/modules/md5.mjs", "type": "module" } ],
       "onfinish": ["ccm.get", "https://mnutze.github.io/bsc.log/resources/configs.js", "global.onfinish"],
       "hashUser": ["ccm.get", "https://mnutze.github.io/bsc.log/resources/configs.js", "global.hashUser"],
       "events": {
@@ -178,7 +178,7 @@ ccm.files[ 'configs.js' ] = {
     },
 
     "quick_decide": {
-      "hash": [ "ccm.load", { "url": "https://ccmjs.github.io/akless-components/modules/md5.js", "type": "module" } ],
+      "hash": [ "ccm.load", { "url": "https://ccmjs.github.io/akless-components/modules/md5.mjs", "type": "module" } ],
       "onfinish": ["ccm.get", "https://mnutze.github.io/bsc.log/resources/configs.js", "global.onfinish"],
       "hashUser": ["ccm.get", "https://mnutze.github.io/bsc.log/resources/configs.js", "global.hashUser"],
       "events": {
@@ -188,7 +188,7 @@ ccm.files[ 'configs.js' ] = {
     },
 
     "quiz": {
-      "hash": [ "ccm.load", { "url": "https://ccmjs.github.io/akless-components/modules/md5.js", "type": "module" } ],
+      "hash": [ "ccm.load", { "url": "https://ccmjs.github.io/akless-components/modules/md5.mjs", "type": "module" } ],
       "onfinish": ["ccm.get", "https://mnutze.github.io/bsc.log/resources/configs.js", "global.onfinish"],
       "hashUser": ["ccm.get", "https://mnutze.github.io/bsc.log/resources/configs.js", "global.hashUser"],
       "events": {
@@ -197,7 +197,7 @@ ccm.files[ 'configs.js' ] = {
     },
 
     "regex": {
-      "hash": [ "ccm.load", { "url": "https://ccmjs.github.io/akless-components/modules/md5.js", "type": "module" } ],
+      "hash": [ "ccm.load", { "url": "https://ccmjs.github.io/akless-components/modules/md5.mjs", "type": "module" } ],
       "onfinish": ["ccm.get", "https://mnutze.github.io/bsc.log/resources/configs.js", "global.onfinish"],
       "hashUser": ["ccm.get", "https://mnutze.github.io/bsc.log/resources/configs.js", "global.hashUser"],
       "events": {
@@ -209,7 +209,7 @@ ccm.files[ 'configs.js' ] = {
     },
 
     "show_solutions": {
-      "hash": [ "ccm.load", { "url": "https://ccmjs.github.io/akless-components/modules/md5.js", "type": "module" } ],
+      "hash": [ "ccm.load", { "url": "https://ccmjs.github.io/akless-components/modules/md5.mjs", "type": "module" } ],
       "onfinish": ["ccm.get", "https://mnutze.github.io/bsc.log/resources/configs.js", "global.onfinish"],
       "hashUser": ["ccm.get", "https://mnutze.github.io/bsc.log/resources/configs.js", "global.hashUser"],
       "events": {
@@ -219,7 +219,7 @@ ccm.files[ 'configs.js' ] = {
     },
 
     "submit": {
-      "hash": [ "ccm.load", { "url": "https://ccmjs.github.io/akless-components/modules/md5.js", "type": "module" } ],
+      "hash": [ "ccm.load", { "url": "https://ccmjs.github.io/akless-components/modules/md5.mjs", "type": "module" } ],
       "onfinish": ["ccm.get", "https://mnutze.github.io/bsc.log/resources/configs.js", "global.onfinish"],
       "hashUser": ["ccm.get", "https://mnutze.github.io/bsc.log/resources/configs.js", "global.hashUser"],
       "events": {
@@ -228,7 +228,7 @@ ccm.files[ 'configs.js' ] = {
     },
 
     "teambuild": {
-      "hash": [ "ccm.load", { "url": "https://ccmjs.github.io/akless-components/modules/md5.js", "type": "module" } ],
+      "hash": [ "ccm.load", { "url": "https://ccmjs.github.io/akless-components/modules/md5.mjs", "type": "module" } ],
       "onfinish": ["ccm.get", "https://mnutze.github.io/bsc.log/resources/configs.js", "global.onfinish"],
       "hashUser": ["ccm.get", "https://mnutze.github.io/bsc.log/resources/configs.js", "global.hashUser"],
       "events": {
@@ -239,7 +239,7 @@ ccm.files[ 'configs.js' ] = {
     },
 
     "upload": {
-      "hash": [ "ccm.load", { "url": "https://ccmjs.github.io/akless-components/modules/md5.js", "type": "module" } ],
+      "hash": [ "ccm.load", { "url": "https://ccmjs.github.io/akless-components/modules/md5.mjs", "type": "module" } ],
       "onfinish": ["ccm.get", "https://mnutze.github.io/bsc.log/resources/configs.js", "global.onfinish"],
       "hashUser": ["ccm.get", "https://mnutze.github.io/bsc.log/resources/configs.js", "global.hashUser"],
       "events": {
@@ -249,7 +249,7 @@ ccm.files[ 'configs.js' ] = {
     },
 
     "uml": {
-      "hash": [ "ccm.load", { "url": "https://ccmjs.github.io/akless-components/modules/md5.js", "type": "module" } ],
+      "hash": [ "ccm.load", { "url": "https://ccmjs.github.io/akless-components/modules/md5.mjs", "type": "module" } ],
       "onfinish": ["ccm.get", "https://mnutze.github.io/bsc.log/resources/configs.js", "global.onfinish"],
       "hashUser": ["ccm.get", "https://mnutze.github.io/bsc.log/resources/configs.js", "global.hashUser"],
       "events": {
@@ -258,7 +258,7 @@ ccm.files[ 'configs.js' ] = {
     },
 
     "user": {
-      "hash": [ "ccm.load", { "url": "https://ccmjs.github.io/akless-components/modules/md5.js", "type": "module" } ],
+      "hash": [ "ccm.load", { "url": "https://ccmjs.github.io/akless-components/modules/md5.mjs", "type": "module" } ],
       "onfinish": ["ccm.get", "https://mnutze.github.io/bsc.log/resources/configs.js", "global.onfinish"],
       "hashUser": ["ccm.get", "https://mnutze.github.io/bsc.log/resources/configs.js", "global.hashUser"],
       "events": {
@@ -268,7 +268,7 @@ ccm.files[ 'configs.js' ] = {
     },
 
     "youtube": {
-      "hash": [ "ccm.load", { "url": "https://ccmjs.github.io/akless-components/modules/md5.js", "type": "module" } ],
+      "hash": [ "ccm.load", { "url": "https://ccmjs.github.io/akless-components/modules/md5.mjs", "type": "module" } ],
       "onfinish": ["ccm.get", "https://mnutze.github.io/bsc.log/resources/configs.js", "global.onfinish"],
       "hashUser": ["ccm.get", "https://mnutze.github.io/bsc.log/resources/configs.js", "global.hashUser"],
       "events": {
